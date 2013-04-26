@@ -32,8 +32,8 @@ if ( !class_exists('phpFlickr') ) {
 		var $cache = true;
 		var $cache_db = null;
 		var $cache_table = null;
-		var $cache_dir = null;
-		var $cache_expire = null;
+		var $cache_dir = cache;
+		var $cache_expire = 0;
 		var $cache_key = null;
 		var $last_request = null;
 		var $die_on_error;
