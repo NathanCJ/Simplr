@@ -1,0 +1,19 @@
+body {
+
+background-color: #000;
+
+}#wrapper {width: 100%;overflow:hidden;height: 100%;}.menu {width: 25%;float: left;color: white;height: 100%;background-color: #080808;margin-right: 10px;}
+#content {
+	
+	padding-top: 5px;
+	width: 100%;	height: 100%;
+	margin: 0;		}
+ 
+li{
+
+	list-style: none;	
+	display: inline;
+	padding-right: 5px;
+	padding-bottom: 5px;	 opacity: 0.5;   transition: opacity .25s ease-in-out;   -moz-transition: opacity .25s ease-in-out;   -webkit-transition: opacity .25s ease-in-out;   }   li:hover {      opacity: 1;      }
+
+	}
