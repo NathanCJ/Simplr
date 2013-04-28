@@ -29,7 +29,7 @@ if ( !class_exists('phpFlickr') ) {
 		var $req;
 		var $response;
 		var $parsed_response;
-		var $cache = true;
+		var $cache = null;
 		var $cache_db = null;
 		var $cache_table = null;
 		var $cache_dir = cache;
