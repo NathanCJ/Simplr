@@ -33,7 +33,7 @@ if ( !class_exists('phpFlickr') ) {
 		var $cache_db = null;
 		var $cache_table = null;
 		var $cache_dir = cache;
-		var $cache_expire = 0;
+		var $cache_expire = null;
 		var $cache_key = null;
 		var $last_request = null;
 		var $die_on_error;
@@ -68,7 +68,7 @@ if ( !class_exists('phpFlickr') ) {
 			$this->php_version = explode(".", $this->php_version[0]);
 		}
 
-		function enableCache ($type, $connection, $cache_expire = 600, $table = 'flickr_cache') {
+		function enableCache ($type, $connection, $cache_expire = 9000000, $table = 'flickr_cache') {
 			// Turns on caching.  $type must be either "db" (for database caching) or "fs" (for filesystem).
 			// When using db, $connection must be a PEAR::DB connection string. Example:
 			//	  "mysql://user:password@server/database"
